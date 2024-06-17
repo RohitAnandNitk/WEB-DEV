@@ -1,0 +1,123 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 38%, rgba(148,187,233,1) 72%);
+}
+.container{
+    width: 30%;
+    max-width: 450px;
+}
+h1{
+    text-transform: uppercase;
+    opacity: .75;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.2;
+    font-size: x-large;
+}
+
+.display-container{
+     position: relative;
+     background-color: rgb(177, 130, 238);
+     border-radius: 1rem;
+     border-bottom: .35rem solid rgb(59, 8, 59);
+     margin: 1rem  0;
+     padding-top: 0.35rem;
+}
+
+
+.display{
+    color: yellow;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: .1cm;
+    letter-spacing: 1px;
+    width: 100%;
+    background-color: transparent;
+    padding: 1.5rem  1rem;
+    border: none;
+   width: 60%;
+}
+.display::placeholder{
+    color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+}
+
+.display-container  button{
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    background-color: transparent;
+    transform: translateY(-50%);
+    border: none;
+    height: 4rem;
+    width: 4rem;
+}
+
+.input-container{
+    width: 85%;
+    background-color: rgb(29, 128, 111);
+    border-bottom: .35rem solid rgb(59, 8, 59);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.password-length{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-length p:nth-child(1) {
+    color: wheat;
+    font-size: 1.5rem;
+}
+.password-length p:nth-child(2) {
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+.strength-contianer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.strength-contianer p:nth-child(1){
+    font-size: 1.5rem;
+}
+
+.indicator {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+}
+
+.generator-button{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: .75rem;
+    border-bottom: .35rem solid rgb(59, 8, 59);
+    letter-spacing: 1px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+    gap: 1 1em;
+}
